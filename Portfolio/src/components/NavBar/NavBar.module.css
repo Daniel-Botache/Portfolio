@@ -16,6 +16,8 @@
     display: flex;
     justify-content:space-around;
     align-items: center;
+    background-color: #4e4e4e;
+    z-index: 900;
     
 }
 .logoContainer{
@@ -23,7 +25,7 @@
    
 }
 .logoContainer_h2{
-    font-family: "RockSalt"
+    font-family: "RockSalt";
 }
 
 .linksContainer{
@@ -33,6 +35,7 @@
     width: 60%;
     font-family: "RockSalt";
     margin-left: 20%;
+    font-size: 0.7em;
 }
 .iconsContainer{
     display: flex;
