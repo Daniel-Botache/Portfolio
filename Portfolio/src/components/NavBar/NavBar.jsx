@@ -10,8 +10,8 @@ function NavBar() {
       </div>
       <div className={styles.linksContainer}>
         <h3 className={styles.linksContainer_h3}>Inicio</h3>
-        <h3 className={styles.linksContainer_h3}>Sobre mi</h3>
         <h3 className={styles.linksContainer_h3}>Proyectos</h3>
+        <h3 className={styles.linksContainer_h3}>Sobre mi</h3>
         <h3 className={styles.linksContainer_h3}>Contacto</h3>
         <div className={styles.iconsContainer}>
           <div className={styles.iconContainer}>
