@@ -1,0 +1,46 @@
+@font-face {
+    font-family: "RockSalt";
+    src: url("../../assets/Fonts/Rock_Salt/RockSalt-Regular.ttf");
+}
+
+.mainContainer{
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    padding-top: 12em;
+}
+
+.infoContainer{
+    display: flex;
+}
+.logoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.descriptionContainer{
+    width: 50%;
+}
+.nameContainer{
+    display: flex;
+    align-items:baseline;
+}
+.lastNameContainer{
+    display: flex;
+    align-items:baseline;
+}
+
+.nameH1{
+    font-family:"RockSalt";
+    font-size: 14em;
+    margin: 0;
+}
+.nameH4{font-family:"RockSalt";
+font-size: 4em;}
+
+.descriptionH2{
+ font-size: 4em ;
+}

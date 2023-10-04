@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "RockSalt";
+    src: url("../../assets/Fonts/Rock_Salt/RockSalt-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Caveat";
+    src: url("../../assets/Fonts/Caveat/Caveat-Regular.ttf");
+}
+
+.principalContainer{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    margin: 0;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    
+}
+.logoContainer{
+    width: 10%;
+   
+}
+.logoContainer_h2{
+    font-family: "RockSalt"
+}
+
+.linksContainer{
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    width: 60%;
+    font-family: "RockSalt";
+    margin-left: 20%;
+}
+.iconsContainer{
+    display: flex;
+    align-items: center;
+    width: 10%;
+    justify-content: center;
+}
+.iconContainer{
+    width: 3em;
+
+}
+img{
+    width: 1.5em;
+}
+
+.langButton{
+    padding: 0.5em;
+}
+
+.langButton_h3{
+    font-size: 0.5em;
+}
