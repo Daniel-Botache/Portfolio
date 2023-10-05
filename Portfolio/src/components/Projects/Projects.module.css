@@ -1,0 +1,63 @@
+.principalContainer {
+  width: 100%;
+  position: relative;
+}
+.imagesContainer {
+  border: 2px solid white;
+  width: 100%;
+  position: relative;
+}
+.imageColor {
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+  filter: drop-shadow(2px 2px 5px gold);
+}
+.imageColorFiltered {
+  filter: grayscale();
+  position: absolute;
+  top: 0;
+  width: 48%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1) 100%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mix-blend-mode: saturation;
+  right: 0; /* Mueve .imageColorFiltered a la derecha */
+  transform: translateY(0); /* Asegura que ocupe toda la altura */
+}
+
+.imageContainerColorFilter {
+  position: relative;
+  display: inline-block;
+}
+.techContainer {
+  display: flex;
+  gap: 1em;
+}
+.FrontContainer {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: absolute;
+  align-items: center;
+}
+
+.BackContainer {
+  margin-top: 7%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  position: absolute;
+  align-items: center;
+  right: 0;
+  top: 0;
+}
+
+.gitImg {
+  height: 2.5em;
+  width: 2.5em;
+}
