@@ -191,7 +191,7 @@ const About = () => {
         }}
       />
       <p className={styles.dangerP}>
-        *Puedes ubicar el mouse en uno de los lados y conocer más sobre mi!
+        *Puedes ubicar el cursor en uno de los lados y conocer más sobre mi!
       </p>
     </div>
   );

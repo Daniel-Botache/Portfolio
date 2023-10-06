@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "RockSalt";
+  src: url("../../assets/Fonts/Rock_Salt/RockSalt-Regular.ttf");
+}
+.mainContainer {
+  padding: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.projectContainer {
+  display: flex;
+  gap: 3em;
+  margin-top: 5%;
+}
+
+.imgContainer {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: perspective(800px) rotateY(25deg) scale(0.8) rotateX(10deg);
+  transition: 0.6s;
+  filter: drop-shadow(10px 10px 30px #535bf2);
+}
+.imgContainer:hover {
+  width: 50%;
+  height: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  transform: perspective(800px) rotateY(-15deg) translateY(-50px) rotateX(10deg)
+    scale(1);
+  filter: drop-shadow(2px 2px 20px #535bf2);
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transform: perspective(10%);
+}
+
+.infoContainer {
+  width: 50%;
+  font-family: "RockSalt";
+  letter-spacing: 0.2em;
+}
+
+.mainH1 {
+  font-family: "RockSalt";
+  color: #535bf2;
+}
+.infoH2 {
+  color: azure;
+  font-size: 1.8em;
+  box-shadow: 2px 2px 5px #535bf2;
+  padding: 0.8em;
+  display: inline-block;
+}
