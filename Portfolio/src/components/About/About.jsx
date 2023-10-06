@@ -160,7 +160,7 @@ const About = () => {
           >
             <div className={styles.techContainer}>
               <img src={NODE} alt="Node Icon" />
-              <h3>Node.js</h3>
+              <h3>NodeJS</h3>
             </div>
             <div className={styles.techContainer}>
               <img src={SEQUELIZE} alt="Sequelize Icon" />

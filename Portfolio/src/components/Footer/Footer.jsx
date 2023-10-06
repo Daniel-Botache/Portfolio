@@ -3,10 +3,10 @@ import { FaCopyright } from "react-icons/fa";
 import styles from "./Footer.module.css";
 const Footer = () => {
   return (
-    <footer>
+    <footer className={styles.mainContainerFooter}>
       <div className="footer-content">
         <div className="footer-info">
-          <p>Correo: daniel.botache@gmail.com</p>
+          <p>daniel.botache@gmail.com</p>
           <p>
             DB Dev todos los derechos reservados &copy;{" "}
             {new Date().getFullYear()}
