@@ -1,7 +1,7 @@
 import "./App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./components/Home/Home";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/Projects.jsx";
 import ContacView from "./components/Contact/ContacView";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";

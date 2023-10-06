@@ -6,6 +6,7 @@ import React from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback } from "react";
+import { Link } from "react-router-dom";
 
 const Projects = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -106,7 +107,9 @@ const Projects = () => {
               E-commerce para compra y venta de vehículos de alta gama
             </span>
           </p>
-          <button>Visitar →</button>
+          <Link to={"https://vehibuy-rho.vercel.app/"}>
+            <button>Visitar →</button>
+          </Link>
         </div>
       </div>
       <div className={styles.projectContainer}>
@@ -121,7 +124,9 @@ const Projects = () => {
               turisticas que se pueden realizar en él.
             </span>
           </p>
-          <button>Visitar →</button>
+          <Link to={"https://github.com/Daniel-Botache/Countries-app"}>
+            <button>Visitar →</button>
+          </Link>
         </div>
       </div>
       <div className={styles.projectContainer}>
@@ -136,7 +141,9 @@ const Projects = () => {
               agregarlas a favoritos y obtener su información
             </span>
           </p>
-          <button>Visitar →</button>
+          <Link to={"https://github.com/Daniel-Botache/Rick-and-Morty-Apps"}>
+            <button>Visitar →</button>
+          </Link>
         </div>
       </div>
     </div>
