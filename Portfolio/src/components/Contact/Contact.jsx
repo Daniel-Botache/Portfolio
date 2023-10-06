@@ -38,14 +38,11 @@ const Contact = () => {
     );
   };
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    login(userData);
-  };
+  const handleSubmit = (event) => {};
 
   const [userData, setUserData] = useState({
-    username: "",
-    password: "",
+    email: "",
+    name: "",
     message: "\n",
   });
 
@@ -53,7 +50,11 @@ const Contact = () => {
   return (
     <div>
       <div className={styles.portalContainer}>
-        <form onSubmit={handleSubmit}>
+        <form
+          onSubmit={handleSubmit}
+          action="https://formsubmit.co/daniel.botache@gmail.com"
+          method="POST"
+        >
           <div className={styles.container}>
             <h1 className={styles.contactH1}>Mándame un mensaje!</h1>
             <p>
@@ -67,21 +68,28 @@ const Contact = () => {
                 >
                   <label className={passwordLabelClass}>Nombre</label>
                   <span
-                    htmlFor="password"
+                    htmlFor="name"
                     className={`${passwordDivClass} ${styles.span}`}
                   >
                     Nombre
                   </span>
                   <input
+                    name="name"
                     ref={inputRefPass}
                     onFocus={handlePasswordClick}
                     className={passwordDivClass}
                     type="text"
-                    id="password"
+                    id="name"
                     value={userData.password}
                     onChange={handleChange}
                   />
                 </div>
+                <input
+                  type="hidden"
+                  name="_next"
+                  value="http://localhost:5173/"
+                />
+                <input type="hidden" name="_captcha" value="false" />
               </div>
               <div className={styles.labelContainer1}>
                 <div
@@ -92,17 +100,18 @@ const Contact = () => {
                     Correo electrónico
                   </label>
                   <span
-                    htmlFor="username"
+                    htmlFor="email"
                     className={`${usernameDivClass} ${styles.span}`}
                   >
                     Correo electrónico
                   </span>
                   <input
+                    name="email"
                     onFocus={handleUsernameClick}
                     ref={inputRefUser}
                     className={usernameDivClass}
                     type="e-mail"
-                    id="username"
+                    id="email"
                     value={userData.username}
                     onChange={handleChange}
                   />
@@ -123,6 +132,7 @@ const Contact = () => {
                   Tu mensaje
                 </span>
                 <textarea
+                  name="message"
                   ref={inputRefMess}
                   onFocus={handleMessageClick}
                   className={`${messageDivClass} ${styles.inputMessage}`}
@@ -131,9 +141,7 @@ const Contact = () => {
                   id="message"
                   value={userData.message}
                   onChange={handleChange}
-                >
-                  Holi
-                </textarea>
+                ></textarea>
               </div>
             </div>
 
