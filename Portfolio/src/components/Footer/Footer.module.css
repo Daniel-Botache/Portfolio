@@ -1,12 +1,29 @@
+@font-face {
+  font-family: "RockSalt";
+  src: url("../../assets/Fonts/Rock_Salt/RockSalt-Regular.ttf");
+}
 .mainContainerFooter {
   background-color: rgb(0, 0, 0);
-  width: 100%;
-  padding-bottom: 1em;
+  width: 98%;
+  padding: 1%;
   bottom: 0;
   margin: 0;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
   position: relative;
   z-index: 900;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.imgFooter {
+  background-color: white;
+  border-radius: 5px;
+}
+.emailContainer {
+  display: flex;
+  gap: 1em;
+  align-items: center;
+  height: 9%;
+}
+.spanFooter {
+  font-family: "RockSalt";
 }
