@@ -5,6 +5,7 @@ import Projects from "./components/Projects/Projects";
 import ContacView from "./components/Contact/ContacView";
 import { Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
+
 function App() {
   return (
     <>

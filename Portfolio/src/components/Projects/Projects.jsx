@@ -94,7 +94,7 @@ const Projects = () => {
           }}
         />
       </div>
-      <h1 className={styles.mainH1}>Projectos</h1>
+      <h1 className={styles.mainH1}>Proyectos</h1>
       <div className={styles.projectContainer}>
         <div className={styles.imgContainer}>
           <img src={VEHIBUY} alt="Vehibuy Image" className={styles.img} />

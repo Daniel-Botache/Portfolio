@@ -5,6 +5,12 @@ import { loadSlim } from "tsparticles-slim";
 import { useCallback } from "react";
 
 function Landing() {
+  const scrollToContact = () => {
+    const aboutElement = document.getElementById("contact");
+    if (aboutElement) {
+      aboutElement.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     await loadSlim(engine);
@@ -115,7 +121,12 @@ function Landing() {
               aprender todos los dias porque no es solamente un trabajo, es mi{" "}
               <span className={styles.descriptionSpan}>pasión.</span>
             </p>
-            <button className={styles.descriptionButton}>Contáctame!</button>
+            <button
+              className={styles.descriptionButton}
+              onClick={scrollToContact}
+            >
+              Contáctame!
+            </button>
           </div>
         </div>
         <p className={styles.mainP}>
