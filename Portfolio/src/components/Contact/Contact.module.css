@@ -1,0 +1,115 @@
+.contactH1 {
+  font-size: 1.5em;
+  position: relative;
+  background-color: #4e4e4e;
+}
+
+.portalContainer {
+  padding-top: 10%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  width: 60%;
+  margin: auto;
+  animation: scale 2s;
+  background-color: #4e4e4e;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.containerInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.labelContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #4e4e4e;
+  width: 100%;
+
+  justify-content: center;
+}
+
+label {
+  color: white;
+  background-color: transparent;
+  position: absolute;
+  font-size: 1em;
+  transform-origin: top left;
+  text-transform: uppercase;
+  left: 0;
+}
+input {
+  color: white;
+  border: 0;
+  border-bottom: 2px #535bf2 solid;
+  outline: none;
+  background-color: transparent;
+  height: 1.2em;
+  padding: 0.8em 0.4em 0.2em;
+  width: 100%;
+  font-size: 1.1em;
+  line-height: 1.5em;
+}
+.span {
+  color: white;
+  opacity: 0;
+  position: absolute;
+  top: 0.4rem;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  left: 0;
+  font-size: 0.5em;
+  transition: all 0.5s;
+}
+
+.clicked {
+  opacity: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+.labelContainer1 {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  margin-bottom: 0.5em;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.inputMessage {
+  resize: none;
+  outline: none;
+  border: 0;
+  border-bottom: 2px solid #535bf2;
+  background-color: #4e4e4e;
+}
+
+.button {
+  position: relative;
+}

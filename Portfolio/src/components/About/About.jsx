@@ -104,7 +104,9 @@ const About = () => {
               alt="Daniel-Botache-Image"
               className={styles.imageColor}
               style={{
-                filter: isMouseOnRight ? "grayscale(0%)" : "grayscale(100%)",
+                filter: isMouseOnRight
+                  ? "drop-shadow(2px 2px 5px gold)"
+                  : "grayscale(100%)",
                 // Mueve la imagen y el filtro hacia la izquierda o derecha según la posición del mouse
                 transform: isMouseOnLeft
                   ? "translateX(60%)"
