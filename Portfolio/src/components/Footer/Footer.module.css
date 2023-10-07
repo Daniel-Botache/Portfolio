@@ -16,7 +16,7 @@
   justify-content: space-between;
 }
 .imgFooter {
-  background-color: white;
+  background-color: transparent;
   border-radius: 5px;
 }
 .emailContainer {

@@ -7,6 +7,7 @@ import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback } from "react";
 import { Link } from "react-router-dom";
+import { FormattedMessage } from "react-intl";
 
 const Projects = () => {
   const particlesInit = useCallback(async (engine) => {
@@ -95,7 +96,9 @@ const Projects = () => {
           }}
         />
       </div>
-      <h1 className={styles.mainH1}>Proyectos</h1>
+      <h1 className={styles.mainH1}>
+        <FormattedMessage id="projects.title" defaultMessage={"Works"} />
+      </h1>
       <div className={styles.projectContainer}>
         <div className={styles.imgContainer}>
           <img src={VEHIBUY} alt="Vehibuy Image" className={styles.img} />
@@ -104,11 +107,22 @@ const Projects = () => {
           <h2 className={styles.infoH2}>VehiBuy</h2>
           <p>
             <span>
-              E-commerce para compra y venta de vehículos de alta gama
+              <FormattedMessage
+                id="projects.spanVehibuy"
+                defaultMessage={
+                  "High-end vehicle buying and selling e-commerce."
+                }
+              />
             </span>
           </p>
           <Link to={"https://vehibuy-rho.vercel.app/"}>
-            <button>Visitar →</button>
+            <button>
+              {" "}
+              <FormattedMessage
+                id="projects.buttonVehibuy"
+                defaultMessage={"Visit →"}
+              />
+            </button>
           </Link>
         </div>
       </div>
@@ -120,12 +134,22 @@ const Projects = () => {
           <h2 className={styles.infoH2}>TAIApp</h2>
           <p>
             <span>
-              App para obtener y crear información de paises y actividades
-              turisticas que se pueden realizar en él.
+              <FormattedMessage
+                id="projects.spanTaiapp"
+                defaultMessage={
+                  "App to obtain and create information about countries and tourist activities that can be done in them."
+                }
+              />
             </span>
           </p>
           <Link to={"https://github.com/Daniel-Botache/Countries-app"}>
-            <button>Visitar →</button>
+            <button>
+              {" "}
+              <FormattedMessage
+                id="projects.buttonTaiapp"
+                defaultMessage={"Visit →"}
+              />
+            </button>
           </Link>
         </div>
       </div>
@@ -137,12 +161,22 @@ const Projects = () => {
           <h2 className={styles.infoH2}>Rick And Morty App</h2>
           <p>
             <span>
-              App para obtener tarjetas con los personajes de Rick and Morty,
-              agregarlas a favoritos y obtener su información
+              <FormattedMessage
+                id="projects.spanRNM"
+                defaultMessage={
+                  "App to obtain cards with Rick and Morty characters, add them to favorites, and get their information."
+                }
+              />
             </span>
           </p>
           <Link to={"https://github.com/Daniel-Botache/Rick-and-Morty-Apps"}>
-            <button>Visitar →</button>
+            <button>
+              {" "}
+              <FormattedMessage
+                id="projects.buttonRNM"
+                defaultMessage={"Visit →"}
+              />
+            </button>
           </Link>
         </div>
       </div>

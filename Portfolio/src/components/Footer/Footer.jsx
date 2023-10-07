@@ -5,7 +5,7 @@ import MAIL from "../../assets/Icons/147563.svg";
 import CV from "../../assets/Icons/cv.svg";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 
 const Footer = () => {
   const language = useSelector((state) => state.language);

@@ -21,5 +21,12 @@
     "contact.labelMessage": "Your message",
     "contact.spanMessage":"Your message",
     "contact.button": "Send",
-    "footer.resume": "My resume"
+    "footer.resume": "My resume",
+    "projects.title": "Works",
+    "projects.spanVehibuy":"High-end vehicle buying and selling e-commerce.",
+    "projects.buttonVehibuy": "Visit →",
+    "projects.spanTaiapp": "App to obtain and create information about countries and tourist activities that can be done in them.",
+    "projects.buttonTaiapp":"Visit →",
+    "projects.spanRNM": "App to obtain cards with Rick and Morty characters, add them to favorites, and get their information.",
+    "projects.buttonRNM": "Visit →"
 }
