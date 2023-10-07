@@ -15,7 +15,7 @@ const ContacView = () => {
     await console.log(container);
   }, []);
   return (
-    <div>
+    <div className={styles.principalViewContact}>
       <div className={styles.particlesContainer}>
         <Particles
           id="tsparticles"
