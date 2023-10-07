@@ -115,7 +115,7 @@ const Projects = () => {
               />
             </span>
           </p>
-          <Link to={"https://vehibuy-rho.vercel.app/"}>
+          <Link to={"https://vehibuy-rho.vercel.app/"} target="_blank">
             <button>
               {" "}
               <FormattedMessage
@@ -142,7 +142,10 @@ const Projects = () => {
               />
             </span>
           </p>
-          <Link to={"https://github.com/Daniel-Botache/Countries-app"}>
+          <Link
+            to={"https://github.com/Daniel-Botache/Countries-app"}
+            target="_blank"
+          >
             <button>
               {" "}
               <FormattedMessage
@@ -169,7 +172,10 @@ const Projects = () => {
               />
             </span>
           </p>
-          <Link to={"https://github.com/Daniel-Botache/Rick-and-Morty-Apps"}>
+          <Link
+            to={"https://github.com/Daniel-Botache/Rick-and-Morty-Apps"}
+            target="_blank"
+          >
             <button>
               {" "}
               <FormattedMessage

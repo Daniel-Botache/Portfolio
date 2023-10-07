@@ -29,6 +29,7 @@ const Footer = () => {
               : "https://drive.google.com/file/d/12b04NzBIa75QDH9gviUlkYVIx8dY1Tjc/view?usp=sharing"
           }
           className={styles.emailContainer}
+          target="_blank"
         >
           <img src={CV} alt="cv icon" className={styles.imgFooter} />
           <p>

@@ -89,7 +89,7 @@ function NavBar() {
           </h3>
         </Link>
         <div className={styles.iconsContainer}>
-          <Link to={"https://github.com/Daniel-Botache"}>
+          <Link target="_blank" to={"https://github.com/Daniel-Botache"}>
             <div className={styles.iconContainer}>
               <svg
                 className={styles.navBarIcon}
@@ -108,6 +108,7 @@ function NavBar() {
             to={
               "https://www.linkedin.com/in/daniel-felipe-botache-zuluaga-desarrollador-full-stack/"
             }
+            target="_blank"
           >
             <div className={styles.iconContainer}>
               <svg
