@@ -1,8 +1,8 @@
 import styles from "./Landing.module.css";
-import React, { useEffect } from "react";
 import Particles from "react-tsparticles";
 import { loadSlim } from "tsparticles-slim";
 import { useCallback } from "react";
+import { FormattedMessage } from "react-intl";
 
 function Landing() {
   const scrollToContact = () => {
@@ -114,25 +114,44 @@ function Landing() {
             </div>
           </div>
           <div className={styles.descriptionContainer}>
-            <h2 className={styles.descriptionH2}>Desarrollador Full Stack</h2>
+            <h2 className={styles.descriptionH2}>
+              <FormattedMessage
+                id="landing.title"
+                defaultMessage={"Full Stack Developer"}
+              />
+            </h2>
             <p className={styles.descriptionP}>
-              Hola! Soy Daniel Botache y creo firmemente que siempre puedo
-              mejorar, ya sea un producto, un software y sobre todo, a mí mismo.
-              Estoy dispuesto a aprender todos los dias porque no es solamente
-              un trabajo, es mi{" "}
-              <span className={styles.descriptionSpan}>pasión.</span>
+              <FormattedMessage
+                id="landing.description"
+                defaultMessage={
+                  "Hello! I'm Daniel Botache, and I firmly believe that I can always improve, whether it's a product, software, and most importantly, myself. I'm willing to learn every day because it's not just a job, it's my"
+                }
+              />{" "}
+              <span className={styles.descriptionSpan}>
+                <FormattedMessage
+                  id="landing.span"
+                  defaultMessage={"passion."}
+                />
+              </span>
             </p>
             <button
               className={styles.descriptionButton}
               onClick={scrollToContact}
             >
-              Contáctame!
+              <FormattedMessage
+                id="landing.button"
+                defaultMessage={"Contact me!"}
+              />
             </button>
           </div>
         </div>
         <p className={styles.mainP}>
-          ¡Si crees que tu proyecto o empresa puede mejorar, no dudes en
-          contactarme, juntos encontraremos la mejor manera de lograrlo! 🤝
+          <FormattedMessage
+            id="landing.mainp"
+            defaultMessage={
+              "If you believe that your project or company can improve, don't hesitate to contact me. Together, we will find the best way to achieve it!🤝"
+            }
+          />
         </p>
       </div>
     </div>
