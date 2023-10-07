@@ -7,6 +7,7 @@ import {
   changeLocale,
 } from "../../Redux/actions";
 import { FormattedMessage } from "react-intl";
+import LOCALE from "../../assets/Icons/mundo-removebg-preview.svg";
 
 function NavBar() {
   const language = useSelector((state) => state.language);
@@ -107,6 +108,7 @@ function NavBar() {
           </Link>
         </div>
         <button className={styles.langButton} onClick={handleChangeLanguage}>
+          <img src={LOCALE} alt="locale  icon" className={styles.localeImg} />
           <h3 className={styles.langButton_h3}>
             <FormattedMessage id="nav.button" defaultMessage={"En"} />
           </h3>

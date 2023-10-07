@@ -6,11 +6,17 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #0c0c0c;
+  --backgrounColorGeneral: #0c0c0c;
+  --secondaryColor: #535bf2;
+  --textColorwhite: #fafafa;
+  --buttonBackgroundColor: #1a1a1a;
+  --fontDefault: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --buttonHoverColor: #646cff;
 }
 
 a {
   font-weight: 500;
-  color: white;
+  color: var(--textColorwhite);
   text-decoration: inherit;
 }
 a:hover {
@@ -19,6 +25,8 @@ a:hover {
 
 body {
   margin: 0;
+  background-color: var(--backgrounColorGeneral);
+  color: var(--textColorwhite);
 }
 
 h1 {
@@ -43,17 +51,4 @@ button:hover {
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
