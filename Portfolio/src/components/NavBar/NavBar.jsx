@@ -1,12 +1,27 @@
 import styles from "./NavBar.module.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { scrolledAboutGlobal } from "../../Redux/actions";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  scrolledAboutGlobal,
+  changeLanguage,
+  changeLocale,
+} from "../../Redux/actions";
+import { FormattedMessage } from "react-intl";
 
 function NavBar() {
+  const language = useSelector((state) => state.language);
   const location = useLocation();
   const navigate = useNavigate();
   const dispatch = useDispatch();
+  const handleChangeLanguage = () => {
+    if (language == "en") {
+      dispatch(changeLocale("es-MX"));
+      dispatch(changeLanguage("es"));
+    } else {
+      dispatch(changeLanguage("en"));
+      dispatch(changeLocale("en-US"));
+    }
+  };
 
   const scrollToAbout = () => {
     dispatch(scrolledAboutGlobal(true));
@@ -36,18 +51,24 @@ function NavBar() {
       </div>
       <div className={styles.linksContainer}>
         <Link to={"/"}>
-          <h3 className={styles.linksContainer_h3}>Inicio</h3>
+          <h3 className={styles.linksContainer_h3}>
+            <FormattedMessage id="nav.home" defaultMessage={"Home"} />
+          </h3>
         </Link>
 
         <h3 className={styles.linksContainer_h3} onClick={scrollToAbout}>
-          Sobre mi
+          <FormattedMessage id="nav.about" defaultMessage={"About"} />
         </h3>
 
         <Link to={"/projects"}>
-          <h3 className={styles.linksContainer_h3}>Proyectos</h3>
+          <h3 className={styles.linksContainer_h3}>
+            <FormattedMessage id="nav.work" defaultMessage={"My work"} />
+          </h3>
         </Link>
         <Link to={"/contact"}>
-          <h3 className={styles.linksContainer_h3}>Contacto</h3>
+          <h3 className={styles.linksContainer_h3}>
+            <FormattedMessage id="nav.contact" defaultMessage={"Contact"} />
+          </h3>
         </Link>
         <div className={styles.iconsContainer}>
           <Link to={"https://github.com/Daniel-Botache"}>
@@ -85,8 +106,10 @@ function NavBar() {
             </div>
           </Link>
         </div>
-        <button className={styles.langButton}>
-          <h3 className={styles.langButton_h3}>ES</h3>
+        <button className={styles.langButton} onClick={handleChangeLanguage}>
+          <h3 className={styles.langButton_h3}>
+            <FormattedMessage id="nav.button" defaultMessage={"En"} />
+          </h3>
         </button>
       </div>
     </div>

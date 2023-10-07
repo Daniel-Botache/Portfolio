@@ -4,3 +4,16 @@ export const scrolledAboutGlobal = (scroll) => {
     payload: scroll,
   };
 };
+
+export const changeLanguage = (language) => {
+  return {
+    type: "CHANGE_LANGUAGE",
+    payload: language,
+  };
+};
+export const changeLocale = (locale) => {
+  return {
+    type: "CHANGE_LOCALE",
+    payload: locale,
+  };
+};

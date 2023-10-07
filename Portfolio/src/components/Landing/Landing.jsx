@@ -116,9 +116,10 @@ function Landing() {
           <div className={styles.descriptionContainer}>
             <h2 className={styles.descriptionH2}>Desarrollador Full Stack</h2>
             <p className={styles.descriptionP}>
-              Hola! Creo firmemente que siempre puedo mejorar, ya sea un
-              producto, un software y sobre todo, a mí mismo. Estoy dispuesto a
-              aprender todos los dias porque no es solamente un trabajo, es mi{" "}
+              Hola! Soy Daniel Botache y creo firmemente que siempre puedo
+              mejorar, ya sea un producto, un software y sobre todo, a mí mismo.
+              Estoy dispuesto a aprender todos los dias porque no es solamente
+              un trabajo, es mi{" "}
               <span className={styles.descriptionSpan}>pasión.</span>
             </p>
             <button

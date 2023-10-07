@@ -42,11 +42,11 @@ const About = () => {
           }}
         >
           <p>
-            Soy Daniel Botache un apasionado por la tecnología y el buen arte,
-            de la ciudad de Medellín-Colombia me destaco porque doy lo mejor de
-            mi en cada acto que realizo; he completado cursos especializados en
-            CSS en la plataforma Linkedin Learning y soy graduado del bootcamp
-            Henry ubicado en Argentina, además de ello trabajé en un estudio
+            Soy un apasionado por la tecnología y el buen arte, de la ciudad de
+            Medellín-Colombia, me destaco porque doy lo mejor de mi en cada acto
+            que realizo; he completado cursos especializados en CSS en la
+            plataforma Linkedin Learning y soy graduado del bootcamp Henry
+            ubicado en Argentina, además de ello trabajé en un estudio
             fotográfico que me permitió desarrollar habilidades con software de
             diseño tales como Adobe Photoshop, Adobe Premiere y After Effects.{" "}
           </p>
