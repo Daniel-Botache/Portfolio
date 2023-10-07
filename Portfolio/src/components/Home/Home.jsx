@@ -9,6 +9,7 @@ import { useEffect } from "react";
 const Home = () => {
   const dispatch = useDispatch();
   const scrolled = useSelector((state) => state.scrolled);
+  const scrolledHome = useSelector((state) => state.scrolledHome);
   useEffect(() => {
     if (scrolled == true) {
       setTimeout(() => {
@@ -20,9 +21,23 @@ const Home = () => {
     }
     dispatch(scrolledAboutGlobal(false));
   }, [scrolled]);
+
+  useEffect(() => {
+    if (scrolledHome == true) {
+      setTimeout(() => {
+        const aboutElement = document.getElementById("home");
+        if (aboutElement) {
+          aboutElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 500);
+    }
+    dispatch(scrolledAboutGlobal(false));
+  }, [scrolledHome]);
   return (
     <div>
-      <Landing />
+      <div id="home">
+        <Landing />
+      </div>
       <div id="about">
         <About />
       </div>

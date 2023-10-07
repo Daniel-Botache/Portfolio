@@ -2,6 +2,7 @@ import styles from "./NavBar.module.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import {
+  scrolledHomeGlobal,
   scrolledAboutGlobal,
   changeLanguage,
   changeLocale,
@@ -40,6 +41,22 @@ function NavBar() {
       }
     }
   };
+  const scrollToHome = () => {
+    dispatch(scrolledHomeGlobal(true));
+    if (location.pathname === "/") {
+      const aboutElement = document.getElementById("home");
+      if (aboutElement) {
+        aboutElement.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      navigate("/");
+
+      const aboutElement = document.getElementById("home");
+      if (aboutElement) {
+        aboutElement.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
 
   return (
     <div className={styles.principalContainer}>
@@ -52,7 +69,7 @@ function NavBar() {
       </div>
       <div className={styles.linksContainer}>
         <Link to={"/"}>
-          <h3 className={styles.linksContainer_h3}>
+          <h3 className={styles.linksContainer_h3} onClick={scrollToHome}>
             <FormattedMessage id="nav.home" defaultMessage={"Home"} />
           </h3>
         </Link>

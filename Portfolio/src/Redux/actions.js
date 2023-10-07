@@ -4,6 +4,9 @@ export const scrolledAboutGlobal = (scroll) => {
     payload: scroll,
   };
 };
+export const scrolledHomeGlobal = (scroll) => {
+  return { type: "SCROLLED_HOME", payload: scroll };
+};
 
 export const changeLanguage = (language) => {
   return {
