@@ -9,7 +9,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-top: 8%;
-  height: 92%;
+  height: 100vh;
   width: 90%;
   background-color: rgb(17, 17, 17);
 }
@@ -38,7 +38,7 @@
 .lastNameContainer {
   display: flex;
   align-items: baseline;
-  height: 12em;
+  height: 30vh;
 }
 
 .nameH1 {
