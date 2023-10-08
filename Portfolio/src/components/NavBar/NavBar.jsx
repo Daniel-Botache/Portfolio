@@ -73,11 +73,11 @@ function NavBar() {
             <FormattedMessage id="nav.home" defaultMessage={"Home"} />
           </h3>
         </Link>
-
-        <h3 className={styles.linksContainer_h3} onClick={scrollToAbout}>
-          <FormattedMessage id="nav.about" defaultMessage={"About"} />
-        </h3>
-
+        <Link to={"/"}>
+          <h3 className={styles.linksContainer_h3} onClick={scrollToAbout}>
+            <FormattedMessage id="nav.about" defaultMessage={"About"} />
+          </h3>
+        </Link>
         <Link to={"/projects"}>
           <h3 className={styles.linksContainer_h3}>
             <FormattedMessage id="nav.work" defaultMessage={"My work"} />

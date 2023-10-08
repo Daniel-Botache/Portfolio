@@ -3,7 +3,7 @@ import About from "../About/About.jsx";
 import Landing from "../Landing/Landing";
 import Contact from "../Contact/Contact.jsx";
 import { useDispatch, useSelector } from "react-redux";
-import { scrolledAboutGlobal } from "../../Redux/actions";
+import { scrolledAboutGlobal, scrolledHomeGlobal } from "../../Redux/actions";
 import { useEffect } from "react";
 
 const Home = () => {
@@ -20,18 +20,20 @@ const Home = () => {
       }, 500);
     }
     dispatch(scrolledAboutGlobal(false));
+    dispatch(scrolledHomeGlobal(false));
   }, [scrolled]);
 
   useEffect(() => {
     if (scrolledHome == true) {
       setTimeout(() => {
-        const aboutElement = document.getElementById("home");
-        if (aboutElement) {
-          aboutElement.scrollIntoView({ behavior: "smooth" });
+        const aboutElement2 = document.getElementById("home");
+        if (aboutElement2) {
+          aboutElement2.scrollIntoView({ behavior: "smooth" });
         }
       }, 500);
     }
     dispatch(scrolledAboutGlobal(false));
+    dispatch(scrolledHomeGlobal(false));
   }, [scrolledHome]);
   return (
     <div>
