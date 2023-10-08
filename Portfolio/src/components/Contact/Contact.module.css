@@ -12,21 +12,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   height: 50vh;
   width: 60%;
   margin: auto;
   animation: scale 2s;
   background-color: #4e4e4e;
-  padding: 1em;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
   border-radius: 10px;
 }
 
 .containerInfo {
   display: flex;
   flex-direction: row;
-  gap: 2em;
-  width: 100%;
+  gap: 3%;
+  width: 99%;
 }
 
 .labelContainer {
@@ -51,14 +54,15 @@ label {
 input {
   color: #fafafa;
   border: 0;
-  border-bottom: 2px #535bf2 solid;
+
   outline: none;
-  background-color: transparent;
+  background-color: #818181;
   height: 1.2em;
   padding: 0.8em 0.4em 0.2em;
   width: 100%;
   font-size: 1.1em;
   line-height: 1.5em;
+  border-radius: 10px;
 }
 .span {
   color: #fafafa;
@@ -107,12 +111,14 @@ input {
 }
 .inputMessage {
   width: 100%;
+  height: 10vh;
   resize: none;
   outline: none;
   border: 0;
-  border-bottom: 2px solid #535bf2;
-  background-color: #4e4e4e;
+
+  background-color: #818181;
   color: #fafafa;
+  border-radius: 10px;
 }
 
 .button {
