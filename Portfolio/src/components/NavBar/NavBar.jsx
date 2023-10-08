@@ -129,28 +129,29 @@ function NavBar() {
       <div
         className={`${styles.menuContainer} ${isMenuOpen ? styles.show : ""}`}
       >
-        <Link to={"/"}>
+        <Link to={"/"} onClick={toggleMenu}>
           <h3 className={styles.linksContainer_h3}>
             <FormattedMessage id="nav.home" defaultMessage={"Home"} />
           </h3>
         </Link>
-        <Link to={"/"}>
+        <Link to={"/"} onClick={toggleMenu}>
           <h3 className={styles.linksContainer_h3} onClick={scrollToAbout}>
             <FormattedMessage id="nav.about" defaultMessage={"About"} />
           </h3>
         </Link>
-        <Link to={"/projects"}>
+        <Link to={"/projects"} onClick={toggleMenu}>
           <h3 className={styles.linksContainer_h3}>
             <FormattedMessage id="nav.work" defaultMessage={"My work"} />
           </h3>
         </Link>
-        <Link to={"/contact"}>
+        <Link to={"/contact"} onClick={toggleMenu}>
           <h3 className={styles.linksContainer_h3}>
             <FormattedMessage id="nav.contact" defaultMessage={"Contact"} />
           </h3>
         </Link>
 
         <Link
+          onClick={toggleMenu}
           target="_blank"
           to={"https://github.com/Daniel-Botache"}
           className={styles.linkMovil628}
@@ -170,6 +171,7 @@ function NavBar() {
           </div>
         </Link>
         <Link
+          onClick={toggleMenu}
           className={styles.linkMovil628}
           to={
             "https://www.linkedin.com/in/daniel-felipe-botache-zuluaga-desarrollador-full-stack/"
