@@ -38,7 +38,7 @@ const Footer = () => {
         </Link>
       </div>
 
-      <p>
+      <p className={styles.logoFooter}>
         <FaCopyright /> <span className={styles.spanFooter}>DB Dev </span>{" "}
         {new Date().getFullYear()}
       </p>

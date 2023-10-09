@@ -6,7 +6,6 @@
   background-color: rgb(0, 0, 0);
   width: 98%;
   padding: 1%;
-  padding-bottom: 2em;
   bottom: 0;
   margin: 0;
   display: flex;
@@ -15,6 +14,7 @@
   flex-direction: row;
   justify-content: center;
   gap: 2%;
+  align-items: center;
 }
 .imgFooter {
   background-color: transparent;
@@ -28,4 +28,18 @@
 }
 .spanFooter {
   font-family: "RockSalt";
+}
+@media (max-width: 722px) {
+  .mainContainerFooter {
+    justify-content: space-evenly;
+  }
+  .emailContainer {
+    font-size: 0.8em;
+  }
+  .spanFooter {
+    font-size: 0.8em;
+  }
+  .logoFooter {
+    font-size: 0.8em;
+  }
 }
