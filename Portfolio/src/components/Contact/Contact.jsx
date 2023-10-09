@@ -144,7 +144,6 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            {errors.username && <p>{errors.username}</p>}
             <div className={styles.labelContainer1}>
               <div
                 className={styles.labelContainer}
