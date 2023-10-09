@@ -95,6 +95,82 @@
   position: absolute;
   bottom: 0%;
 }
+.h2TechMovil {
+  display: none;
+}
+.imgTechnoloMovilContainer {
+  display: none;
+}
+.techonologiesMovil {
+  display: none;
+}
+.perfilContainerMovil {
+  display: none;
+}
 
-@media (max-width: 1100px) {
+@media (max-width: 1000px) {
+  .principalContainer {
+    width: 100%;
+    position: relative;
+  }
+  .imagesContainer {
+    width: 100%;
+    position: relative;
+    height: auto;
+    display: none;
+  }
+  .techonologiesMovil {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+  }
+  .imgTechnoloMovilContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5em;
+    background-color: rgb(49, 46, 46);
+    padding: 1em;
+    width: 80%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+  }
+  .techContainer {
+    background-color: rgb(16, 17, 17);
+    padding: 0.1em;
+    width: 10em;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 0.8em;
+  }
+  .imageColorFiltered {
+    display: none;
+  }
+  .dangerP {
+    display: none;
+  }
+  .h2TechMovil {
+    color: #919191;
+    font-size: 2em;
+    display: block;
+  }
+  .perfilContainerMovil {
+    display: flex;
+    gap: 2em;
+    width: 94%;
+    padding-right: 3%;
+    padding-left: 3%;
+    padding-top: 2em;
+    background-color: rgb(49, 46, 46);
+  }
+  .pPerfilMovil {
+  }
+  .imgPerfilMovil {
+    width: 12em;
+    height: 12em;
+    border-radius: 10px;
+  }
 }

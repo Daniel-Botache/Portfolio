@@ -13,6 +13,7 @@ import POSTGRES from "../../assets/Icons/postgresql.svg";
 import EXPRESS from "../../assets/Icons/express-svgrepo-com.svg";
 import GIT from "../../assets/Icons/Git_icon.svg";
 import { FormattedMessage } from "react-intl";
+import PERFIL from "../../assets/Images/perfil.jpeg";
 
 const About = () => {
   const [isMouseOnLeft, setIsMouseOnLeft] = useState(true);
@@ -32,6 +33,70 @@ const About = () => {
 
   return (
     <div className={styles.principalContainer}>
+      <div className={styles.techonologiesMovil}>
+        <h2 className={styles.h2TechMovil}>Technologies</h2>
+        <div className={styles.imgTechnoloMovilContainer}>
+          <div className={`${styles.techContainer} `}>
+            <img src={JS} alt="JavaScript Icon" />
+            <h3>JavaScript</h3>
+          </div>
+          <div className={`${styles.techContainer} `}>
+            <img src={TS} alt="TypeScript Icon" />
+            <h3>TypeScript</h3>
+          </div>
+          <div className={`${styles.techContainer} `}>
+            <img src={REACT} alt="React Icon" />
+            <h3>React</h3>
+          </div>
+          <div className={`${styles.techContainer} `}>
+            <img src={REDUX} alt="Redux Icon" />
+            <h3>Redux</h3>
+          </div>
+          <div className={`${styles.techContainer}`}>
+            <img src={CSS} alt="Css Icon" />
+            <h3>CSS</h3>
+          </div>
+          <div className={`${styles.techContainer} `}>
+            <img src={HTML} alt="Html Icon" />
+            <h3>HTML</h3>
+          </div>
+          <div className={styles.techContainer}>
+            <img src={NODE} alt="Node Icon" />
+            <h3>NodeJS</h3>
+          </div>
+          <div className={styles.techContainer}>
+            <img src={SEQUELIZE} alt="Sequelize Icon" />
+            <h3>Sequelize</h3>
+          </div>
+          <div className={styles.techContainer}>
+            <img src={POSTGRES} alt="Postgresql Icon" />
+            <h3>PostgreSQL</h3>
+          </div>
+          <div className={styles.techContainer}>
+            <img src={EXPRESS} alt="Express Icon" />
+            <h3>Express</h3>
+          </div>
+          <div className={`${styles.techContainer} `}>
+            <img src={GIT} alt="Git Icon" className={styles.gitImg} />
+            <h3>Git</h3>
+          </div>
+        </div>
+        <div className={styles.perfilContainerMovil}>
+          <img
+            src={PERFIL}
+            alt="Daniel Botache Photo"
+            className={styles.imgPerfilMovil}
+          />
+          <p className={styles.pPerfilMovil}>
+            <FormattedMessage
+              id="about.front"
+              defaultMessage={
+                "I'm passionate about technology and fine art, hailing from the city of Medellin, Colombia. I stand out because I give my best in every endeavor I undertake. I have completed specialized courses in CSS on the LinkedIn Learning platform and graduated from the Henry bootcamp located in Argentina. Additionally, I worked at a photography studio, which allowed me to develop skills with design software such as Adobe Photoshop, Adobe Premiere, and After Effects."
+              }
+            />{" "}
+          </p>
+        </div>
+      </div>
       <div className={styles.imagesContainer}>
         <div
           className={styles.projectsFrontContainer}
