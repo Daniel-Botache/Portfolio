@@ -1,13 +1,15 @@
 .principalContainer {
   width: 100%;
   position: relative;
+  height: 100vh;
 }
 .imagesContainer {
   width: 100%;
   position: relative;
+  height: auto;
 }
 .imageColor {
-  height: 100vh;
+  height: 100%;
   width: 100%;
   text-align: center;
   filter: drop-shadow(2px 2px 5px gold);
@@ -92,4 +94,7 @@
 .dangerP {
   position: absolute;
   bottom: 0%;
+}
+
+@media (max-width: 1100px) {
 }
