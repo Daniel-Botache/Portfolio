@@ -105,3 +105,109 @@
 .h4Container {
   width: 6em;
 }
+
+@media (max-width: 1000px) {
+  .mainContainer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 8%;
+    height: auto;
+    width: 94%;
+    background-color: rgb(17, 17, 17);
+  }
+  .infoContainer {
+    display: flex;
+    gap: 5em;
+  }
+  .logoContainer {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 3em;
+  }
+  .descriptionContainer {
+    z-index: 1;
+    background-color: rgb(17, 17, 17);
+    width: 50%;
+  }
+  .nameContainer {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 2em;
+  }
+  .lastNameContainer {
+    display: flex;
+    align-items: baseline;
+    height: 30vh;
+  }
+
+  .nameH1 {
+    font-family: "RockSalt";
+    font-size: 8em;
+    margin: 0;
+    color: #535bf2;
+  }
+
+  .nameH4_name {
+    font-family: "RockSalt";
+    font-size: 2em;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    animation: typing 2s steps(7), blink 0.5s infinite step-end alternate;
+    width: 6ch;
+    white-space: nowrap;
+    text-align: left;
+  }
+  .nameH4_lastName {
+    font-family: "RockSalt";
+    text-align: left;
+    font-size: 2em;
+    margin: 0;
+    display: block;
+    overflow: hidden;
+    animation: typing 2s steps(7) infinite alternate,
+      blink 0.5s infinite step-end alternate;
+    width: 6em;
+    white-space: nowrap;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  .descriptionH2 {
+    font-size: 3em;
+    color: #919191;
+  }
+  .descriptionP {
+    font-size: 1.2em;
+    text-align: justify;
+    color: #919191;
+  }
+  .descriptionButton {
+    font-size: 1.2em;
+  }
+
+  .mainP {
+    font-size: 1.2em;
+  }
+  .descriptionSpan {
+    color: #535bf2;
+  }
+  .h4Container {
+    width: 6em;
+  }
+}
+@media (max-width: 800px) {
+}
