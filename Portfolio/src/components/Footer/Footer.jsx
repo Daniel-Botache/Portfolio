@@ -25,8 +25,8 @@ const Footer = () => {
         <Link
           to={
             language == "en"
-              ? "https://drive.google.com/file/d/10WjYxKkEeFH9ns4y9SsRDv8dUSxpk233/view?usp=sharing"
-              : "https://drive.google.com/file/d/12b04NzBIa75QDH9gviUlkYVIx8dY1Tjc/view?usp=sharing"
+              ? "https://drive.google.com/file/d/11qzO0eHLv_mPEyhI8iIJ-r3f9svLa1e0/view?usp=sharing"
+              : "https://drive.google.com/file/d/1-6t6os7djuIvR3BR8wM3V1q-y6ABQ3mX/view?usp=sharing"
           }
           className={styles.emailContainer}
           target="_blank"
