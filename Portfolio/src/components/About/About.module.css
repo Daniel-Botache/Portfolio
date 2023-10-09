@@ -112,6 +112,7 @@
   .principalContainer {
     width: 100%;
     position: relative;
+    height: auto;
   }
   .imagesContainer {
     width: 100%;
@@ -165,6 +166,7 @@
     padding-left: 3%;
     padding-top: 2em;
     background-color: rgb(49, 46, 46);
+    align-items: center;
   }
   .pPerfilMovil {
   }
@@ -172,5 +174,10 @@
     width: 12em;
     height: 12em;
     border-radius: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .perfilContainerMovil {
+    flex-direction: column;
   }
 }
