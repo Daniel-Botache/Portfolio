@@ -34,7 +34,12 @@ const About = () => {
   return (
     <div className={styles.principalContainer}>
       <div className={styles.techonologiesMovil}>
-        <h2 className={styles.h2TechMovil}>Technologies</h2>
+        <h2 className={styles.h2TechMovil}>
+          <FormattedMessage
+            id="about.tecnologies"
+            defaultMessage={"Technologies"}
+          />{" "}
+        </h2>
         <div className={styles.imgTechnoloMovilContainer}>
           <div className={`${styles.techContainer} `}>
             <img src={JS} alt="JavaScript Icon" />

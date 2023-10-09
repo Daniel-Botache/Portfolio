@@ -28,6 +28,7 @@
    "projects.spanTaiapp": "App para obtener y crear información de paises y actividades turisticas que se pueden realizar en él.",
    "projects.buttonTaiapp":"Visitar →",
    "projects.spanRNM": "App para obtener tarjetas con los personajes de Rick and Morty, agregarlas a favoritos y obtener su información.",
-   "projects.buttonRNM": "Visitar →"
+   "projects.buttonRNM": "Visitar →",
+   "about.tecnologies": "Tecnologías"
    
 }
