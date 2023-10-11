@@ -96,7 +96,7 @@ const About = () => {
             <FormattedMessage
               id="about.frontMovil"
               defaultMessage={
-                "I'm passionate about technology and fine art, hailing from the city of Medellin, Colombia. I stand out because I give my best in every endeavor I undertake. I have completed specialized courses in CSS on the LinkedIn Learning platform and graduated from the Henry bootcamp located in Argentina. Additionally, I took courses in OOP and data structures at the University of Los Andes. I worked at a photography studio, which allowed me to develop skills with design software such as Adobe Photoshop, Adobe Premiere, and After Effects."
+                "I'm passionate about technology and fine art, hailing from the city of Medellin, Colombia. I stand out because I give my best in every endeavor I undertake. I have completed specialized courses in CSS on the LinkedIn Learning platform and graduated from the Henry bootcamp located in Argentina. Additionally, I took courses in OOP Java and data structures at the University of Los Andes. I worked at a photography studio, which allowed me to develop skills with design software such as Adobe Photoshop, Adobe Premiere, and After Effects."
               }
             />{" "}
           </p>
