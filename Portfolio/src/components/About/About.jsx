@@ -102,7 +102,13 @@ const About = () => {
             />{" "}
           </p>
           <Link to={"/projects"}>
-            <button>All my Works</button>
+            <button>
+              {" "}
+              <FormattedMessage
+                id="about.buttonWorks"
+                defaultMessage={"All my Work"}
+              />{" "}
+            </button>
           </Link>
         </div>
       </div>
