@@ -14,6 +14,7 @@ import EXPRESS from "../../assets/Icons/express-svgrepo-com.svg";
 import GIT from "../../assets/Icons/Git_icon.svg";
 import { FormattedMessage } from "react-intl";
 import PERFIL from "../../assets/Images/perfil.jpeg";
+import { Link } from "react-router-dom";
 
 const About = () => {
   const [isMouseOnLeft, setIsMouseOnLeft] = useState(true);
@@ -100,6 +101,9 @@ const About = () => {
               }
             />{" "}
           </p>
+          <Link to={"/projects"}>
+            <button>All my Works</button>
+          </Link>
         </div>
       </div>
       <div className={styles.imagesContainer}>
